@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    >
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="166dp"
+        android:layout_height="105dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/a"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_below="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_alignLeft="@+id/iv_img"
+        android:layout_alignRight="@+id/iv_img"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:textColor="#3b3b3b"
+        android:textStyle="bold"
+        android:text="是几点开始克拉拉附近的垃圾锋利的"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_alignLeft="@+id/iv_img"
+        android:layout_alignRight="@+id/iv_img"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="#666666"
+            android:text="马翔"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="11sp"
+            android:textColor="#666666"
+            android:text="马翔"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

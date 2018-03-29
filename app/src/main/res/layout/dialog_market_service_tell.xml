@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_market_service_dialog_bg" >
+
+        <TextView
+            android:id="@+id/market_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="您遇到问题了吗？请呼叫我哦！"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/market_dialog_title_tell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/market_dialog_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <!--android:text="18600833685"-->
+
+
+        <View
+            android:id="@+id/horizontal_line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/market_dialog_title_tell"
+            android:background="#5c5c5c" />
+
+        <View
+            android:id="@+id/vertical_line1"
+            android:layout_width="0.1dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/ll_bottom"
+            android:layout_below="@+id/horizontal_line2"
+            android:layout_centerHorizontal="true"
+            android:background="#5c5c5c" />
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/horizontal_line2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="6dp" >
+
+            <TextView
+                android:id="@+id/market_dialog_service_call"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="呼叫"
+                android:textColor="#2081F8"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/market_dialog_service_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#2081F8"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.has.asapp.ui.MyTextView
+        android:layout_gravity="right"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:gravity="center"
+        android:text="产品很好"
+        android:visibility="gone"
+        />
+
+    <com.example.has.asapp.ui.UPMarqueeView
+        android:id="@+id/upmv_market_home_vips_info"
+        android:layout_width="match_parent"
+        android:background="@drawable/img_market_scroll_text_bg"
+        android:layout_height="80dp"/>
+</LinearLayout>
